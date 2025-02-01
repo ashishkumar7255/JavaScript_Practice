@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(246, 55, 55);
+}
+
+.main p{
+    margin: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
