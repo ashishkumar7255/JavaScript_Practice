@@ -32,7 +32,7 @@ removebtn.addEventListener("click", function () {
         return;
     }
 
-    var items = listitem.getElementsByTagName("li");
+    var items = listitem.querySelectorAll("li");
     var found = false;
 
     for (let i = 0; i <= items.length; i++) {
