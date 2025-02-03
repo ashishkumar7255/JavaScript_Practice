@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.tabs{
+    height: 10vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab1{
+    height: 60%;
+    width: 10%;
+    background-color: azure;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid gold;
+    font-size: 20px;
+    background-color: yellow;
+}
+
+.tab2{
+    height: 60%;
+    width: 10%;
+    background-color: azure;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid gold;
+    font-size: 20px;
+    background-color: yellow;
+}
+
+.tab3{
+    height: 60%;
+    width: 10%;
+    background-color: azure;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid gold;
+    font-size: 20px;
+    background-color: yellow;
+}
+
+h3{
+    margin: 30px;
+    display: none;
+}
+
+/* Style for active tab */
+.active {
+    background-color: red;
+    color: white;
+}

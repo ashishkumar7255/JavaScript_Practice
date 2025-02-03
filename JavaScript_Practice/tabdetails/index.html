@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <div class="tabs">
+            <div class="tab1">code</div>
+            <div class="tab1">alen musk</div>
+            <div class="tab1">steve job</div>
+            <div class="tab1">sunder pichai</div>
+        </div>
+        <h3 class="code">// Select all elements with the class "tab1" and store them in the variable t1 (NodeList of all tabs) <br>
+            var t1 = document.querySelectorAll(".tab1"); <br><br>
+            
+            // Select the element with id "alen" and store it in the variable aln <br>
+            var aln = document.querySelector("#alen"); <br><br>
+            
+            // Select the element with id "steve" and store it in the variable st <br>
+            var st = document.querySelector("#steve"); <br><br>
+            
+            // Select the element with id "sunder" and store it in the variable sun <br>
+            var sun = document.querySelector("#sunder"); <br><br>
+            
+            // Initially, make the "alen" section visible <br>
+            aln.style.display = "block"; <br><br>
+            
+            // Initially, hide the "steve" section <br>
+            st.style.display = "none"; <br><br>
+            
+            // Initially, hide the "sunder" section <br>
+            sun.style.display = "none"; <br><br>
+            
+            // Loop through each tab in the NodeList t1 <br>
+            t1.forEach((tab, index) => { <br><br>
+                
+                // Add a click event listener to each tab <br>
+                tab.addEventListener("click", function () { <br><br>
+            
+                    // Hide all sections when a tab is clicked <br>
+                    aln.style.display = "none"; <br>
+                    st.style.display = "none"; <br>
+                    sun.style.display = "none"; <br><br>
+            
+                    // Check which tab is clicked and show the corresponding section <br>
+                    if (index === 0) { <br>
+                        // If the first tab (index 0) is clicked, show "alen" <br>
+                        aln.style.display = "block"; <br>
+                    } else if (index === 1) { <br>
+                        // If the second tab (index 1) is clicked, show "steve" <br>
+                        st.style.display = "block"; <br>
+                    } else if (index === 2) { <br>
+                        // If the third tab (index 2) is clicked, show "sunder" <br>
+                        sun.style.display = "block"; <br>
+                    } <br>
+                }); <br>
+            }); <br>
+            
+            </h3>
+        <h3 id="alen">Musk developed an interest in technology and entrepreneurship at an early age. He taught himself
+            computer programming and sold his first software, a game called Blastar, at the age of 12. After moving to
+            the United States, he attended the University of Pennsylvania, earning degrees in Physics and Economics. He
+            then briefly joined a Ph.D. program at Stanford University but dropped out after two days to pursue his
+            entrepreneurial dreams.Musk's first major success was Zip2, a web software company that provided business
+            directories and maps to newspapers. He sold Zip2 for nearly $300 million and co-founded X.com, an online
+            payment company that later became PayPal. When eBay acquired PayPal in 2002 for $1.5 billion, Musk received
+            a significant financial boost, allowing him to invest in more ambitious projects.</h3>
+        <h3 id="steve">Steve Jobs was born on February 24, 1955, in San Francisco, California. He was adopted by Paul
+            and Clara Jobs, who nurtured his interest in electronics and mechanics. Jobs attended Reed College but
+            dropped out after six months, preferring to learn through personal exploration. He later traveled to India
+            in search of spiritual enlightenment, an experience that influenced his design philosophy.In 1976, Jobs
+            co-founded Apple with his friend Steve Wozniak in his parents garage. They created the Apple I, a personal
+            computer that gained attention for its innovative design. This was followed by the Apple II, which became
+            one of the first mass-produced personal computers. In 1984, Apple launched the Macintosh, a computer with a graphical user interface and a mouse—revolutionary
+            concepts at the time. However, due to internal conflicts, Jobs was forced to leave Apple in 1985</h3>
+        <h3 id="sunder">In 1976, Jobs co-founded Apple with his friend Steve Wozniak in his parent garage. They created the Apple
+            I, a personal computer that gained attention for its innovative design. This was followed by the Apple II,
+            which became one of the first mass-produced personal computers.In 1984, Apple launched the Macintosh, a computer with a graphical user interface and a mouse—revolutionary
+            concepts at the time. However, due to internal conflicts, Jobs was forced to leave Apple in 1985.</h3>
+    <script src="script.js"></script>
+</body>
+</html>
